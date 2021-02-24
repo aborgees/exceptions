@@ -1,0 +1,24 @@
+public class Exe3troll{
+
+public static void main (String[] args){
+
+for(int g=0;g<numeros.length;g++){
+try{
+System.out.printl(numeros[g] +"/" + demon[g]+ "="+(numeros[g]/demon[g]) );
+}
+catch(ArithmeticException e){
+System.out.printl("Erro ao ser dividido por zero");
+System.exit(0);
+}
+
+catch(ArrayIndexOutOfBoundsException e){
+System.out.printl("Posição do array não válido");
+System.exit(0);
+}
+finally{
+System.out.println("Essa linha é impressa sempre após o try ou catch");
+System.out.printl();
+}
+}
+}
+}
