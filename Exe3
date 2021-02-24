@@ -1,0 +1,20 @@
+public class Exe3{
+
+public static void main (String[] args){
+
+for(int g=0;g<numeros.length;g++){
+try{
+System.out.printl(numeros[g] +"/" + demon[g]+ "="+(numeros[g]/demon[g]) );
+}
+catch(ArithmeticException e){
+System.out.printl("Erro ao ser dividido por zero");
+}
+catch(ArrayIndexOutOfBoundsException e){
+System.out.printl("Posição do array não válido");
+}
+finally{
+System.out.println("Essa linha sempre é impressa após o try ou catch");
+}
+}
+}
+}
