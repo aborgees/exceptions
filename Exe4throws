@@ -1,0 +1,19 @@
+public class Exe4throws{
+public static void main(String[] args){
+
+System.out.printl("Digite um numero decimal");
+try{
+double num = leNumero();
+System.out.println("Numero digitado:" + num);
+}
+catch(Exception e){
+System.out.printl("Entrada Inválida");
+e.printStackTrace();
+}
+}
+public static double leNumero() throws Exception{
+Scanner scan =NewScanner(System.in);
+double num = scan.nextDouble();
+return num;
+}
+}
